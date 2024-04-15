@@ -50,19 +50,32 @@ body{
     width: 100vw;
     height: 10vh;
 }
-@media screen and (max=500px){
+@media screen and (max-width: 750px){
+    .flex{
+        margin: 0;
+        padding: 0;
+    }
     .conteudo{
+        width: 100vw;
         flex-direction: column;
-        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
     .head{
         height: 20%;
-        width: 70%;
+        width: 95%;
     }
     .lateral{
         height: 0;
         width: 0;
         margin: 0;
         padding: 0;
+    }
+    .sec{
+        height: 20%;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }    
