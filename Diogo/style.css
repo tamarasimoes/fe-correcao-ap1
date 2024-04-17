@@ -1,62 +1,86 @@
-body{
-    background-color: white;
-}
-
-nav{
-    background-color: black;
-    height: 60px;
-    width: 100%;
+body {
+    margin: 0 ;
+    padding: 0;
     color: white;
+    width: 100%;
+    height: 100vh;
+    align-items: flex-start;
     text-align: center;
-    padding-top: 35px;
 }
 
-main{
+nav {
     display: flex;
-    flex-wrap:wrap;
-    justify-content: space-around;
-    align-content: stretch;
-    align-items: center;
-    background-color: white;
-    height: 430px;
-    width: 100%;
-    color: black; 
-    padding: 1px solid white;
-    
-}
-
-main .header{
-    background-color: lightgrey;
-    height: 150px;
-    width: 570px;
-}
-
-main .section1{
-    background-color: darkgray;
-    height: 150px;
-    width: 250px;
-}
-
-main .section2{
-    background-color: darkgray;
-    height: 150px;
-    width: 250px;
-}
-
-main .aside{
-    justify-self:right;
-    align-self:center;
-    background-color: darkgray;
-    height: 400px;
-    width: 250px;
-    flex-grow: 0;
-}
-
-footer{
-    background-color:  lightgray;
-    height: 50px;
-    width: 100%;
+    justify-content: center;
+    align-items:center;
+    background-color: grey;
     color: black;
-    text-align: center;
-    padding: 20px;
+    width: 100%;
+    height: 8vh;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.meio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:white;
+    position: relative;
+    margin-top: 15px;
+    margin: 15px;
+    height: 70vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    position: absolute;
+    width: 70%;
+    height: 40%;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+}
+
+aside {
+    border-radius: 20px;
+    width: 25%;
+    height: 100%;
+    background-color: gray;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    top: 45%;
+    left: 0;
+}
+
+section p {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    background-color: lightgray;
+    height: 90%;
+    border-radius: 20px;
+    flex: 1; 
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: black;
+    border-radius: 20px;
+    width: 100%;
+    height: 8vh;
 }
