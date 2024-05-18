@@ -1,0 +1,114 @@
+body {
+    margin: 0 ;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    align-items: flex-start;
+}
+
+nav {
+    border-radius: 25px;
+    margin-top: 10px;
+    width: 100%;
+    height: 8vh;
+    background: #161616;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.conteiner {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+    margin: 15px;
+    height: 70vh;
+    background: #ffffff;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 40%;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main aside {
+    border-radius: 20px;
+    width: 25%;
+    height: 100%;
+    background: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+section {
+    width: 70%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 45%;
+    left: 0;
+}
+
+section p {
+    
+    background-color: black;
+    flex: 1; 
+    height: 90%;
+    margin: 0 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    border-radius: 20px;
+}
+
+
+footer {
+    border-radius: 20px;
+    width: 100%;
+    height: 8vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+@media (max-width:500px){
+
+    aside{
+        display: none;
+    }
+
+    section{
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        top: 40%
+    }
+
+    section p{
+        width: 100%;
+        margin: 10px 0;
+        
+    }
+
+    header{
+        height: 40%;
+        width: 100%;
+    }
+    
+}    
+               
